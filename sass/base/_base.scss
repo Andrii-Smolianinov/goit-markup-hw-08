@@ -1,0 +1,31 @@
+@import "../base/reset";
+body {
+    font-family: var(--main-font);
+    font-size: var(--main-font-sz);
+    text-decoration: var(--main-text-decor);
+    line-height: var(--main-line-hght);
+    letter-spacing: var(--main-leter-spacing);
+    font-weight: var(--main-font-weight);
+    color: var(--main-txt-clr);
+
+}
+body.modal-open {
+    overflow: hidden;
+}
+
+
+
+.work__tittle,
+.team-maintittle,
+.clients_tittle {
+    font-size: var(--primary-font-sz);
+    line-height: var(--secondary-line-hght);
+    font-weight: var(--secondary-font-weight);
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

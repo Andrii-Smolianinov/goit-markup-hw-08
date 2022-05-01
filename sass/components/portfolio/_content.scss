@@ -1,0 +1,118 @@
+.content {
+
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    
+
+    &__item {
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        @media screen and (max-width: 767px) {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            
+            width: 100%;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin: 15px;
+            width: calc((100% - 4 * 15px) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 6 * 15px) / 3);
+        }
+    }
+
+    &__link {
+        text-decoration: var(--main-text-decor);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+        
+        transition: box-shadow var(--transition);
+        outline: none;
+
+        &:hover .content__popup,
+        &:focus .content__popup {
+            transform: translateY(-100%)
+        }
+    }
+
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__image {
+        display: block;
+    }
+
+    &__popup {
+        position: absolute;
+        
+        height: 294px;
+        padding: 63px 24px;
+        
+        background-color: rgba(33, 150, 243, 0.9);
+        
+        transform: translateY(0);
+        transition: transform var(--transition);
+    }
+
+    &__label {
+        
+        letter-spacing: 0.03em;
+        color: var(--main-address__link);
+        font-size: 12px;
+        line-height: 1.14;
+    
+        @media screen and (min-width: 391px) {
+        .content__label {
+            font-size: 18px;
+            line-height: 1.56;
+        }
+    
+    }
+}
+
+        
+
+    &__meta {
+        padding: 20px 24px;
+        flex-grow: 1;
+        border-right: 1px solid var(--project-border-color);
+        border-bottom: 1px solid var(--project-border-color);
+        border-left: 1px solid var(--project-border-color);
+        
+    }
+
+    &__name {
+        font-weight: var(--secondary-font-weight);
+        font-size: var(--fourth-font-sz);
+        line-height: 2;
+        letter-spacing: var(--primary-leter-spacing);
+        color: var(--main-txt-clr);
+        
+        margin-bottom: 4px;
+    }
+
+    &__text {
+        font-weight: var(--primary-font-weight);
+        font-size: var(--secondary-font-sz);
+        line-height: 1.87;
+        color: var(--secondary-txt-clr);
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,23 @@
+.form {
+
+    &__icon {
+        position: absolute;
+        top: 43px;
+        left: 14px;
+    
+        display: inline-block;
+    }
+
+
+    &__icons {
+        fill: #212121;
+
+        &:hover,
+        &:focus {
+            fill: #2196F3;
+            cursor: pointer;
+        }
+    }
+}
+
+

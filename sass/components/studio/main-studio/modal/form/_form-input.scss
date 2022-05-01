@@ -1,0 +1,27 @@
+.form {
+
+    &__input {
+        margin: 0;
+        padding-left: 42px;
+        
+        height: 40px;
+        outline: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: color var(--transition);
+
+        &:hover,
+        &:focus {
+            border-color: #2196f3;
+            cursor: pointer;
+        }
+
+        &:hover+.form__icon svg,
+        &:focus+.form__icon svg {
+            fill: #2196F3;
+            cursor: pointer;
+        }
+    }
+}
+

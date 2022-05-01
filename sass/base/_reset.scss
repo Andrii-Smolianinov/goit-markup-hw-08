@@ -1,0 +1,20 @@
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.features,
+.work,
+.team,
+.address,
+.menu__item,
+.content,
+.main-navigation__list,
+.main-contacts {
+    list-style: none;
+}

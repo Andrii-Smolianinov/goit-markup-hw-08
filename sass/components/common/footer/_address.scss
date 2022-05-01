@@ -1,0 +1,42 @@
+.address {
+    
+
+    &__list {
+        font-weight: var(--primary-font-weight);
+        font-size: var(--main-font-sz);
+        line-height: var(--primary-line-hght);
+        color: var(--color-rdba);
+
+        @media screen and (max-width: 1199px) {
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+        }
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: var(--primary-font-weight);
+        line-height: var(--primary-line-hght);
+        color: var(--color-rdba);
+        text-decoration: var(--main-text-decor);
+        outline: none;
+    }
+
+    &__link--inverse {
+        font-weight: var(--primary-font-weight);
+        font-size: var(--main-font-sz);
+        line-height: var(--primary-line-hght);
+        color: var(--main-address__link);
+        font-style: normal;
+        text-decoration: var(--main-text-decor);
+        margin-bottom: 9px;
+        outline: none;
+    }
+}

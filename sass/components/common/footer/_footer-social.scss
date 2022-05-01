@@ -1,0 +1,50 @@
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+
+    &__tittle {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--main-address__link);
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+            margin-top: 60px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+    }
+    
+    &__link {
+        fill: var(--main-address__link);
+        background-color: rgba(255, 255, 255, 0.1);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        transition: fill var(--transition),
+        background-color var(--transition);
+        outline: none;
+
+        &:hover,
+        &:focus {
+            color: var(--main-address__link);
+            background-color: var(--primary-txt-clr);
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+}

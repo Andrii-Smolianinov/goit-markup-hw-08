@@ -1,0 +1,58 @@
+@import "./form/form-field";
+@import "./backdrop";
+@import "./modal-button-close";
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,
+        -50%);
+    transition: 250ms ease-in;
+    opacity: 1;
+    width: calc(100% - 30px);
+    padding-top: 40px;
+
+    min-height: 409px;
+    
+    background-color: #FFFFFF;
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%);
+    transition: 250ms ease-in;
+
+    @media screen and (min-width: 450px) {
+        min-height: 609px;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
+    }
+
+    &__tittle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        letter-spacing: 0.03em;
+        color: #212121;
+        width: calc(100% - 80px);
+
+        @media screen and (min-width: 450px) {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            line-height: 1.15;
+            max-width: 448px;
+        }
+    }
+}

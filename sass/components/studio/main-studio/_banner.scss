@@ -1,0 +1,99 @@
+.banner {
+    background-color: var(--secondary-address__link);
+    text-align: center;
+    width: 100%;
+    padding: 118px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &__overlay {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/banner/mobile.jpg);
+    }
+    
+    @media screen and (min-resolution: 2dppx) {
+        &__overlay {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/banner/mobile2x.jpg);
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &__overlay {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/banner/tablet.jpg);
+        }
+        @media screen and (min-resolution: 2dppx) {
+            &__overlay {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/banner/tablet2x.jpg);
+            }
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &__overlay {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/banner/desktop.jpg);
+                padding: 200px 0;
+                height: 600px;
+        }
+    
+        @media screen and (min-resolution: 2dppx) {
+            &__overlay {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/banner/desktop2x.jpg);
+                    padding: 200px 0;
+                    height: 600px;
+            }
+        }
+    }
+    
+
+    &__tittle {
+        line-height: 1.62;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
+        }
+    }
+
+    &__button {
+        font-weight: var(--secondary-font-weight);
+        font-size: var(--secondary-font-sz);
+        line-height: 1.87;
+        align-items: center;
+        text-align: center;
+        letter-spacing: var(--primary-leter-spacing);
+
+        color: var(--main-address__link);
+        background: var(--primary-txt-clr);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 1px solid transparent;
+        cursor: pointer;
+
+        display: block;
+        padding: 10px 32px;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        
+    }
+}
