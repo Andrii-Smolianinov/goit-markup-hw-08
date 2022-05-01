@@ -3,7 +3,6 @@
 
 .header {
     border-bottom: 1px solid #ECECEC;
-    // position: relative;
     height: 60px;
 
     @media screen and (min-width: 768px) {
@@ -26,10 +25,14 @@
 .main-navigation {
     
     @media screen and (max-width: 767px) {
+        position: relative;
+        max-width: 100%;
         display: flex;
         align-items: center;
         height: 59px;
-        justify-content: space-between
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
     @media screen and (min-width: 768px) {
@@ -133,17 +136,18 @@
 
 .main-contacts {
     
-    margin-top: 90px;
+    margin-top: 45px;
+    margin-bottom: 45px;
     
     @media screen and (min-width: 450px) {
         margin-top: 276px;
+        margin-bottom: 0;
     }
-    
 
     @media screen and (max-width: 767px) {
         display: flex;
-        flex-direction: column-reverse;}
-    
+        flex-direction: column-reverse;
+    }
 
     @media screen and (min-width: 768px) {
         margin-left: 84px;
@@ -159,7 +163,6 @@
     &__item {
         
         margin-bottom: 32px;
-        
         
         @media screen and (min-width: 768px) {
             margin-bottom: 0;
