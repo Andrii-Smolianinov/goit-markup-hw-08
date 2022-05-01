@@ -1550,6 +1550,8 @@ img {
   height: 100%;
   padding-top: 73px;
   padding-bottom: 113px;
+  padding-right: 24px;
+  padding-left: 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(0);
   transition: transform var(--transition);
