@@ -1,8 +1,9 @@
 @import "./logo";
+@import "./mobile-menu";
 
 .header {
     border-bottom: 1px solid #ECECEC;
-    position: relative;
+    // position: relative;
     height: 60px;
 
     @media screen and (min-width: 768px) {
@@ -12,8 +13,14 @@
 }
 
 .header>.container {
-    display: flex;
+    
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+
+    }
+    
 }
 
 .main-navigation {
@@ -22,6 +29,7 @@
         display: flex;
         align-items: center;
         height: 59px;
+        justify-content: space-between
     }
     
     @media screen and (min-width: 768px) {
@@ -62,7 +70,7 @@
         color: #212121;
 
         &--active {
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 1199px) {
                 color: #2196f3;}
         }
 
@@ -88,7 +96,7 @@
             
             &::after {
                 position: absolute;
-                bottom: 0;
+                bottom: 1px;
                 right: 0;
                 content: '';
                 display: inline-flex;
@@ -100,6 +108,10 @@
                 opacity: 0;
                 transition: transform var(--transition),
                     opacity var(--transition);
+
+                @media screen and (min-width: 1200px) {
+                    bottom: 0;
+                }
             }
         }
         

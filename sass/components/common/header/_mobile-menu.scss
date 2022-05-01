@@ -1,5 +1,5 @@
 .menu-button {
-    position: absolute;
+    // position: absolute;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@
     }
     @media screen and (min-width: 768px) {
         display: flex;
-        height: 80px;
+        height: 79px;
         align-items: center;
         padding: 0;
     }

@@ -63,7 +63,11 @@
         position: absolute;
         
         height: 294px;
-        padding: 63px 24px;
+        padding: 93px 24px;
+
+        @media screen and (min-width: 450px) {
+            padding: 63px 24px;
+        }
         
         background-color: rgba(33, 150, 243, 0.9);
         
@@ -75,16 +79,14 @@
         
         letter-spacing: 0.03em;
         color: var(--main-address__link);
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.14;
-    
-        @media screen and (min-width: 391px) {
-        .content__label {
+
+        @media screen and (min-width: 450px) {
             font-size: 18px;
             line-height: 1.56;
         }
-    
-    }
+        
 }
 
         

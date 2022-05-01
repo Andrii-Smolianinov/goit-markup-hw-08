@@ -37,21 +37,10 @@
     outline: none;
     color: var(--primary-txt-clr);
 
-    @media screen and (max-width: 767px) {
-        position: absolute;
-        left: 15px;
-        top: 16px;
-    }
-    @media screen and (min-width: 1200px) {    
+    
+    @media screen and (min-width: 1200px) {
         font-size: 26px;
         line-height: 1.19;
     }
 }
 
-// &logo__header {
-//     @media screen and (max-width: 767px) {
-//         position: absolute;
-//         left: 0;
-//         top: 16px;
-//     }
-// }

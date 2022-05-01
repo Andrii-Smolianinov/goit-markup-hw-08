@@ -1,0 +1,19 @@
+// variables
+@import "./utils/variables";
+
+// base
+@import "./base/base";
+
+// components
+@import "./components/common/container";
+@import "./components/common/section";
+@import "./components/common/reviews";
+
+@import "./components/common/header/header";
+@import "./components/studio/main-studio/main";
+@import "./components/common/footer/footer";
+
+@import "./components/portfolio/portfolio";
+
+// utils
+@import "./utils/visually-hidden";
