@@ -1547,7 +1547,7 @@ img {
 }
 .content__popup {
   position: absolute;
-  height: 294px;
+  height: 100%;
   padding: 93px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(0);
