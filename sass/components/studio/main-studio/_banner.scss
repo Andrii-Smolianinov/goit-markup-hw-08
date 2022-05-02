@@ -25,19 +25,19 @@
         }
     }
     @media screen and (min-width: 768px) {
-        &__overlay {
+        .banner__overlay {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/banner/tablet.jpg);
         }
         @media screen and (min-resolution: 2dppx) {
-            &__overlay {
+            .banner__overlay {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(/images/banner/tablet2x.jpg);
+                url(../images/banner/tablet2x.jpg);
             }
         }
     }
     @media screen and (min-width: 1200px) {
-        &__overlay {
+        .banner__overlay {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../images/banner/desktop.jpg);
                 padding: 200px 0;
@@ -45,7 +45,7 @@
         }
     
         @media screen and (min-resolution: 2dppx) {
-            &__overlay {
+            .banner__overlay {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                     url(../images/banner/desktop2x.jpg);
                     padding: 200px 0;
