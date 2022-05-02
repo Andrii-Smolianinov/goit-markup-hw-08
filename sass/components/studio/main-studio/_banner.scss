@@ -12,48 +12,6 @@
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
     }
-    
-    &__overlay {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/banner/mobile.jpg);
-    }
-    
-    @media screen and (min-resolution: 2dppx) {
-        &__overlay {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/banner/mobile2x.jpg);
-        }
-    }
-    @media screen and (min-width: 768px) {
-        .banner__overlay {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/banner/tablet.jpg);
-        }
-        @media screen and (min-resolution: 2dppx) {
-            .banner__overlay {
-                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/banner/tablet2x.jpg);
-            }
-        }
-    }
-    @media screen and (min-width: 1200px) {
-        .banner__overlay {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/banner/desktop.jpg);
-                padding: 200px 0;
-                height: 600px;
-        }
-    
-        @media screen and (min-resolution: 2dppx) {
-            .banner__overlay {
-                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/banner/desktop2x.jpg);
-                    padding: 200px 0;
-                    height: 600px;
-            }
-        }
-    }
-    
 
     &__tittle {
         line-height: 1.62;
@@ -101,3 +59,74 @@
         
     }
 }
+
+.banner__overlay {
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/banner/mobile.jpg);
+}
+
+    @media screen and (min-resolution: 2dppx) {
+        .banner__overlay {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/banner/mobile2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .banner__overlay {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/banner/tablet.jpg);
+        }
+
+        @media screen and (min-resolution: 2dppx) {
+            .banner__overlay {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/banner/tablet2x.jpg);
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .banner__overlay {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/banner/desktop.jpg);
+            padding: 200px 0;
+            height: 600px;
+        }
+
+        @media screen and (min-resolution: 2dppx) {
+            .banner__overlay {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/banner/desktop2x.jpg);
+                padding: 200px 0;
+                height: 600px;
+            }
+        }
+    }
+
+// Варіант від Насті
+// .banner__overlay {
+//     height: 400px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-size: cover;
+
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         image-set(url('..images/banner/mobile.jpg') 1x, url('..images/banner/mobile2x.jpg') 2x);
+
+//     @media screen and (min-width: 768px) {
+//         .banner__overlay {
+//             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url('..images/banner/tablet.jpg') 1x, url('..images/banner/Header2x.jpg') 2x);
+//         }
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         .banner__overlay {
+//             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//                 image-set(url('../images/banner/desktop.jpg') 1x, url('..images/banner/desktop2x.jpg') 2x);
+//             padding: 200px 0;
+//             height: 600px;
+//         }
+//     }
+// }

@@ -944,38 +944,6 @@ img {
     max-width: 1600px;
   }
 }
-.banner__overlay {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/mobile.jpg);
-}
-@media screen and (min-resolution: 2dppx) {
-  .banner__overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/mobile2x.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .banner__overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/tablet.jpg);
-  }
-}
-@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .banner__overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/banner/tablet2x.jpg);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .banner__overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/desktop.jpg);
-    padding: 200px 0;
-    height: 600px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .banner__overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/desktop2x.jpg);
-    padding: 200px 0;
-    height: 600px;
-  }
-}
 .banner__tittle {
   line-height: 1.62;
   font-style: normal;
@@ -1018,6 +986,39 @@ img {
   text-align: center;
 }
 
+.banner__overlay {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/mobile.jpg);
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .banner__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/mobile2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .banner__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/tablet2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/desktop.jpg);
+    padding: 200px 0;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .banner__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/desktop2x.jpg);
+    padding: 200px 0;
+    height: 600px;
+  }
+}
 @media screen and (min-width: 768px) {
   .features {
     display: flex;
