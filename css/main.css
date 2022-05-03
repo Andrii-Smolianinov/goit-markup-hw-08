@@ -57,6 +57,11 @@ body {
   font-weight: var(--main-font-weight);
   color: var(--main-txt-clr);
 }
+@media screen and (max-width: 767px) {
+  body {
+    margin-top: 60px;
+  }
+}
 
 body.modal-open {
   overflow: hidden;
@@ -951,11 +956,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (max-width: 767px) {
-  .banner {
-    margin-top: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .banner {
     max-width: 1600px;
@@ -1467,7 +1467,6 @@ img {
   .menu {
     flex-wrap: wrap;
     margin-bottom: 40px;
-    margin-top: 60px;
   }
 }
 @media screen and (min-width: 768px) {
