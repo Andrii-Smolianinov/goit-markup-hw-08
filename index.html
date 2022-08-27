@@ -4,17 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Студия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    
     <script defer src="./js/mobile-menu.js"></script>
 
 
 </head>
 <body>
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader__div">            
+                <div class="dot" style="--i:0;"></div>
+                <div class="dot" style="--i:1;"></div>
+                <div class="dot" style="--i:2;"></div>
+                <div class="dot" style="--i:3;"></div>
+                <div class="dot" style="--i:4;"></div>
+                <div class="dot" style="--i:5;"></div>
+                <div class="dot" style="--i:6;"></div>
+                <div class="dot" style="--i:7;"></div>
+                <div class="dot" style="--i:8;"></div>
+                <div class="dot" style="--i:9;"></div>
+            </div>
+            <h2 class="loader__tittle">Loading...</h2>
+            <div class="loader__div">            
+                <div class="dot" style="--i:0;"></div>
+                <div class="dot" style="--i:1;"></div>
+                <div class="dot" style="--i:2;"></div>
+                <div class="dot" style="--i:3;"></div>
+                <div class="dot" style="--i:4;"></div>
+                <div class="dot" style="--i:5;"></div>
+                <div class="dot" style="--i:6;"></div>
+                <div class="dot" style="--i:7;"></div>
+                <div class="dot" style="--i:8;"></div>
+                <div class="dot" style="--i:9;"></div>
+            </div>
+    </div>
+    </div>
+    
     <header class="header">
         <div class="container__header">
             <nav class="main-navigation">
@@ -35,7 +67,7 @@
                             <a class="main-navigation__link"
                                 href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="main-navigation__item"><a class="main-navigation__link" href="">Контакты</a></li>
+                        <li class="main-navigation__item"><a class="main-navigation__link" href="./loader.html">Loader</a></li>
                     </ul>
                     <ul class="main-contacts">
                         <li class="main-contacts__item">
@@ -529,6 +561,12 @@
         </div>
         
     </footer>
+    <script type="module">
+        window.onload = function () {
+          let loader = document.getElementById("preloader");
+          loader.style.display = "none";
+        };
+      </script>
     <script type="module">
         const refs = {
             openModalBtn: document.querySelector("[data-open-modal]"),
