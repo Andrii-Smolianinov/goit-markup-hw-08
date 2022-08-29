@@ -8,7 +8,25 @@
 //   });
 // });
 
-window.onload = function () {
-    let loader = document.getElementById('preloader');
-    loader.style.display = 'none'
-}
+// window.onload = function () {
+//     let loader = document.getElementById('preloader');
+//     loader.style.display = 'none'
+// }
+
+function getRefs() {
+    const refs = {
+      spinner: document.querySelector('.spiner'),
+    };
+    return refs;
+  }
+  
+  export function addSpinner() {
+    const refs = getRefs();
+    refs.spinner.classList.add('spiner--is-active');
+  }
+  export function removeSpinner() {
+    const refs = getRefs();
+    setTimeout(function () {
+      refs.spinner.classList.remove('spiner--is-active');
+    }, 500);
+  }
