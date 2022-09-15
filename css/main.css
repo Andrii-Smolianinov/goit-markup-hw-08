@@ -1618,46 +1618,4 @@ img {
   visibility: hidden;
   margin: 0;
   padding: 0;
-}
-
-.spiner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7f9fb;
-  z-index: 5000;
-  transition: opacity 0.15s, visibility 0.15s;
-}
-
-.spiner--hiden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.spiner--is-active {
-  visibility: visible;
-}
-
-.spiner::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px solid #ddd;
-  border-top-color: #7449f5;
-  border-radius: 50%;
-  animation: loading 1s ease infinite;
-}
-
-@keyframes loading {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
 }/*# sourceMappingURL=main.css.map */
